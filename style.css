@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    background-color: #106dc9;
+    color: #333;
+    position: relative;
+    z-index: 1;
+  
+    margin: 0;
+}
+
+.main-con {
+    max-width: 300px;
+    
+    margin: auto;
+}
+
+body::before {
+    content: attr(password);
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.hiden{
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    transform: rotate(-30deg);
+    z-index: -1;
+    transition: top 0.5s, left 0.5s;
+    
+}
+#Bgg {
+    position: relative; /* เพิ่มการกำหนดตำแหน่ง */
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.5); /* เพิ่มเงาเริ่มต้น */
+    transition: box-shadow 0.5s ease; /* การเคลื่อนไหวของเงา */
+    min-height: 10vh;
+}
+
